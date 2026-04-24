@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div className="bg-slate-50 text-slate-900">
+    <div className="min-h-screen bg-slate-50 text-slate-900">
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -32,9 +32,9 @@ function App() {
         </div>
       </nav>
 
-      <main>
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-100 via-white to-cyan-50">
-          <div className="max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+      <main className="w-full">
+        <section className="w-full pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-100 via-white to-cyan-50">
+          <div className="w-full grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
             <div>
               <span className="inline-flex items-center rounded-full bg-cyan-100 text-cyan-800 px-4 py-2 text-sm font-semibold mb-6">
                 Material-inspired design with Tailwind
@@ -83,8 +83,8 @@ function App() {
           </div>
         </section>
 
-        <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+        <section id="features" className="w-full py-20 px-4 sm:px-6 lg:px-8">
+          <div className="w-full">
             <div className="text-center mb-14">
               <p className="text-sm uppercase tracking-[0.28em] text-cyan-600 font-semibold mb-3">Features</p>
               <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">Designed for modern teams</h2>
@@ -109,8 +109,8 @@ function App() {
           </div>
         </section>
 
-        <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100">
-          <div className="max-w-6xl mx-auto text-center mb-14">
+        <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-slate-100">
+          <div className="w-full text-center mb-14">
             <p className="text-sm uppercase tracking-[0.28em] text-indigo-600 font-semibold mb-3">Pricing</p>
             <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">Flexible plans for every team</h2>
             <p className="mt-4 text-base text-slate-600 max-w-2xl mx-auto">
@@ -146,8 +146,8 @@ function App() {
           </div>
         </section>
 
-        <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto text-center mb-14">
+        <section id="testimonials" className="w-full py-20 px-4 sm:px-6 lg:px-8">
+          <div className="w-full text-center mb-14">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-600 font-semibold mb-3">Testimonials</p>
             <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">Loved by teams everywhere</h2>
           </div>
@@ -166,8 +166,8 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-600 via-cyan-500 to-teal-400 text-white">
-          <div className="max-w-4xl mx-auto text-center rounded-[2rem] border border-white/20 bg-white/10 p-10 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl">
+        <section id="contact" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-600 via-cyan-500 to-teal-400 text-white">
+          <div className="w-full text-center rounded-[2rem] border border-white/20 bg-white/10 p-10 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl">
             <h2 className="text-4xl md:text-5xl font-semibold mb-4">Let’s build something beautiful.</h2>
             <p className="text-lg text-slate-100 max-w-2xl mx-auto mb-8">Subscribe for updates, design tips, and early access to our next UI release.</p>
             <form onSubmit={handleSubscribe} className="flex flex-col gap-4 sm:flex-row justify-center">
@@ -187,8 +187,8 @@ function App() {
         </section>
       </main>
 
-      <footer className="bg-slate-950 text-slate-300 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-4">
+      <footer className="w-full bg-slate-950 text-slate-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="w-full grid gap-8 lg:grid-cols-4">
           <div>
             <p className="text-xl font-semibold text-white mb-3">MaterialFlow</p>
             <p className="text-slate-400">A modern landing page with Material-inspired Tailwind styling.</p>
